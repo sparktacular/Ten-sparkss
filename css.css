@@ -1,0 +1,65 @@
+body {
+    font-family: Comic Sans Ms, sans-serif;
+     background-color: rgb(61, 61, 61);
+}
+
+.article {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+    background: url(https://raw.githubusercontent.com/sparktacular/Ten-sparkss/refs/heads/main/background.webp) center center;  
+    background-size: cover;
+    z-index: -1; 
+}
+
+        .block {
+            text-align: center;
+            width: 100%;
+            height: 250px;
+            background-color: rgba(21, 130, 105, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        .text {
+            font-size: 20px;
+            font-weight: bold;
+            color: white; 
+            text-align: center;
+        }
+        
+        .image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-item {
+  text-align: center;
+}
+
+.Logo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.rounded-image:hover {
+  transform: scale(1.1);
+}
+
+p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+
