@@ -25,6 +25,8 @@ body {
             align-items: center;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+         margin-bottom: 100px;
+         margin-top: 150px;
         }
 
         .text {
@@ -32,13 +34,14 @@ body {
             font-weight: bold;
             color: white; 
             text-align: center;
+             
         }
         
         .image-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+ 
 }
 
 .image-item {
@@ -46,11 +49,12 @@ body {
 }
 
 .Logo {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+  width: 190px;
+  height: 190px;
+  
   border-radius: 50%;
   transition: transform 0.3s;
+   box-shadow: 0 0 30px rgba(30, 21, 130, 0.9);  /*здесь я делаю подсветку*/
 }
 
 .rounded-image:hover {
@@ -62,4 +66,3 @@ p {
   font-size: 16px;
   color: white;
 }
-
