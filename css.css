@@ -1,6 +1,7 @@
 body {
     font-family: Comic Sans Ms, sans-serif;
-     background-color: rgb(61, 61, 61);
+         margin: 0;
+    padding: 0;
 }
 
 .article {
