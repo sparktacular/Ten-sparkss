@@ -1,0 +1,73 @@
+body {
+    font-family: Comic Sans Ms, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#content {
+    background: rgb(19, 19, 19);
+    box-shadow: 10px 15px 15px black;
+    color: aliceblue;
+    text-decoration: none;
+  font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+
+    height: auto;
+    width: 80%;
+
+    padding: 5px 5px 10px 20px;
+    margin: 3% auto 3% auto;
+}
+.background {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+    background: url("https://raw.githubusercontent.com/sparktacular/Ten-sparkss/refs/heads/main/background.webp") center center;  
+    background-size: cover;
+    z-index: -1; 
+.container {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .book-cover {
+            flex: 0 0 200px;
+        }
+
+        .book-cover img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-info {
+            flex: 1;
+        }
+
+        .book-info h2 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .book-info p {
+            margin: 5px 0;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .book-info p span {
+            font-weight: bold;
+            color: #000;
+        }
+  
