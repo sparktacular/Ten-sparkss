@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
 }
+  .book-preview {
+        width: 40%;
+        height: 40%; }
 #content {
     background: rgb(19, 19, 19);
     box-shadow: 10px 15px 15px black;
@@ -12,10 +15,8 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 22px;
-
     height: auto;
     width: 80%;
-
     padding: 5px 5px 10px 20px;
     margin: 3% auto 3% auto;
 }
@@ -29,6 +30,7 @@ body {
     background: url("https://raw.githubusercontent.com/sparktacular/Ten-sparkss/refs/heads/main/background.webp") center center;  
     background-size: cover;
     z-index: -1; 
+    
 .container {
             display: flex;
             gap: 20px;
@@ -40,34 +42,3 @@ body {
             border-radius: 8px;
             padding: 20px;
         }
-
-        .book-cover {
-            flex: 0 0 200px;
-        }
-
-        .book-cover img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .book-info {
-            flex: 1;
-        }
-
-        .book-info h2 {
-            margin: 0 0 10px;
-            color: #333;
-        }
-
-        .book-info p {
-            margin: 5px 0;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        .book-info p span {
-            font-weight: bold;
-            color: #000;
-        }
-  
