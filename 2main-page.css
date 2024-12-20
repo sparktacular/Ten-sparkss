@@ -1,69 +1,82 @@
 body {
-    font-family: Comic Sans Ms, sans-serif;
-         margin: 0;
+    font-family: Comic Sans MS, sans-serif;
+    margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .article {
-    position: fixed; 
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%; 
-    overflow: hidden;
-    background: url(https://raw.githubusercontent.com/sparktacular/Ten-sparkss/refs/heads/main/background.webp) center center;  
+    min-height: 100vh; /* Устанавливаем минимальную высоту страницы на 100% высоты окна */
+    overflow: auto; /* Разрешаем прокрутку */
+    background: url(https://raw.githubusercontent.com/sparktacular/Ten-sparkss/refs/heads/main/background.webp) center center;
     background-size: cover;
-    z-index: -1; 
+    z-index: -1;
 }
 
-        .block {
-            text-align: center;
-            width: 100%;
-            height: 250px;
-            background-color: rgba(21, 130, 105, 0.6);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
-         margin-bottom: 100px;
-         margin-top: 150px;
-        }
-
-        .text {
-            font-size: 20px;
-            font-weight: bold;
-            color: white; 
-            text-align: center;
-             
-        }
-        
-        .image-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- 
+/* Блок с аннотацией */
+.block {
+    text-align: center;
+    width: 80%; /* Ограничиваем ширину блока до 80% экрана */
+    background-color: rgba(21, 130, 105, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10% auto 10% auto; /* Центрируем блок и добавляем отступы сверху и снизу */
+}
+.text {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+/* Контейнер для картинок */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Устанавливаем 4 столбца по умолчанию */
+    gap: 5% /* Уменьшаем расстояние между картинками */
+    padding: 5% /* Добавляем немного отступов */
+    justify-items: center; /* Центрируем картинки */
 }
 
+/* Элементы с изображениями */
 .image-item {
-  text-align: center;
+    text-align: center;
 }
 
-.Logo {
-  width: 190px;
-  height: 190px;
-  
-  border-radius: 50%;
-  transition: transform 0.3s;
-   box-shadow: 0 0 30px rgba(30, 21, 130, 0.9);  /*здесь я делаю подсветку*/
+/* Изображения с более вертикальной формой */
+.rounded-image {
+    width: 60%; /* Устанавливаем более узкую ширину */
+    height: 70%; /* Устанавливаем большую высоту для создания вытянутого прямоугольника */
+
+    border-radius: 15px; /* Округляем углы картинки */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Эффекты на hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Добавляем тень */
 }
 
+/* Эффект при наведении */
 .rounded-image:hover {
-  transform: scale(1.1);
+    transform: scale(1.05); /* Немного увеличиваем изображение при наведении */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Увеличиваем тень при наведении */
 }
 
 p {
-  margin-top: 10px;
-  font-size: 16px;
-  color: white;
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .image-container {
+        grid-template-columns: repeat(2, 1fr); /* При ширине экрана меньше 1200px, 2 столбца */
+    }
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        grid-template-columns: 1fr; /* При ширине экрана меньше 768px, 1 столбец */
+    }
 }
