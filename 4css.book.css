@@ -17,7 +17,7 @@ body {
     font-style: normal;
     font-size: 18px;
     height: auto;
-    width: 60%;
+    width: 70%;
     padding: 5px 5px 10px 20px;
     margin: 3% auto 3% auto;  /*это отступ с углов экрана*/
 
@@ -26,7 +26,9 @@ body {
             display: flex;
             align-items: flex-start;
             gap: 20px;  /*это отступ от картинки до текста в контейнере*/
-            max-width: 800px;
+             flex-wrap: wrap;
+  justify-content: center;
+           max-width: 100%;
             margin: 0 auto;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
@@ -37,8 +39,8 @@ body {
     /* Перенос слов в любом месте */
     word-wrap: break-word; /* Альтернативный способ для старых браузеров */
     hyphens: auto; /* Перенос слов по слогам */
-    margin-top: 20px;
     line-height: 1.6; /* Улучшаем читаемость */
+    margin-top: 1.25rem;
 }
 
 /* Стили для <pre> */
@@ -54,6 +56,10 @@ body {
     height: 100%; 
     background: url("https://raw.githubusercontent.com/sparktacular/Ten-sparkss/refs/heads/main/background.webp") center center;  
     background-size: cover;
-    z-index: -1; }
-    
-    
+    z-index: -1;
+    font-size: 14px;
+  }
+   @media (max-width: 480px) {
+    #content {
+        font-size: 0.85rem; /* Ещё больше уменьшаем текст */
+        padding: 0.5rem;
