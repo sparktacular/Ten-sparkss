@@ -25,10 +25,25 @@ body {
 .section-1 {
     background: url('https://github.com/sparktacular/Ten-sparkss/blob/main/main.png?raw=true') no-repeat center center;
     background-size: cover;
-    position: relative;
-    min-height: 100vh; /* Задаем минимальную высоту 100% от высоты экрана */
+    height: 100vh;
 }
 
+/* Разделение секций */
+.divider {
+    height: 100px;
+    background-color: #1a1a1a; /* Чуть светлее черного */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Отступ между секциями */
+.spacer {
+    height: 120px; /* Увеличенный отступ */
+    background-color: #1a1a1a; /* Чуть светлее черного */
+}
+
+/* Стиль для заголовков и текста */
 h1 {
     font-size: 3rem;
     margin: 0;
@@ -63,49 +78,33 @@ p {
     background-color: #570ba3;
 }
 
-/* Разделитель */
-.divider {
-    height: 100px;
-    background-color: #1a1a1a; /* Чуть светлее черного */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Отступ между секциями */
-.spacer {
-    height: 120px; /* Увеличенный отступ */
-    background-color: #1a1a1a; /* Чуть светлее черного */
-}
-
 /* Вторая секция */
 .section-2 {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 50px 5%;
-    gap: 10%;
+    flex-direction: row; /* Изображение и текст расположены в ряд */
+    justify-content: flex-start; /* Изображение слева, текст справа */
+    align-items: flex-start; /* Центрирование по верхнему краю */
+    padding: 50px 5%; /* Отступы вокруг секции */
+    gap: 5%; /* Пространство между изображением и текстом */
 }
 
 .section-2-content {
     display: flex;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 1200px;
+    flex-direction: row; /* Элементы в строку */
+    width: 100%; /* Полная ширина секции */
+    max-width: 1200px; /* Максимальная ширина секции */
 }
 
 .section-2 img {
-    width: 50%;
-    height: auto;
+    flex: 1; /* Изображение занимает часть пространства */
+    max-width: 50%; /* Ограничиваем ширину изображения */
+    height: auto; /* Сохраняем пропорции */
 }
 
-/* Добавляем отступы для блока с текстом */
 .section-2 .text-content {
-    width: 40%;
-    text-align: left;
-    margin-top: 50px; /* Отступ сверху от картинки */
-    margin-bottom: 50px; /* Отступ снизу, чтобы не было слишком тесно */
+    flex: 1; /* Текст занимает часть пространства */
+    text-align: left; /* Выравниваем текст по левому краю */
+    padding: 0 20px; /* Отступы вокруг текста */
 }
 
 /* Четвертая секция */
